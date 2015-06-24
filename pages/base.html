@@ -1,0 +1,84 @@
+<html>
+<head>
+<style type="text/css">
+span.highlight{background-color: #00FFFF}
+span.highlight1{background-color: #C0C0C0}
+div#container{width:600px；}
+div#header {background-color:#99bbbb;height: 100px;width: 700;}
+div#menu {background-color:#ffff99;height:400px;width:150px;float:left;}
+div#content {background-color:#EEEEEE;height:400px;width:700px;float:center;}
+div#position1{position: absolute;top: 30px;left: 750px;}
+div#position2{position: absolute;top: 250px;left: 750px;}
+div#position3{position: absolute;top: 200px;left: 1050px;}
+
+div#transbox1{width:600px;height: 100px;background-color: #fffffff;
+
+opacity: 0.7; }
+
+div#back1{
+	width: 700;height: 100;
+	background: url('/static/05.jpg') no-repeat;
+	border: 1px solid black;
+
+}
+
+
+h1 {margin-bottom:0;font-family: Georgia}
+h2 {margin-bottom:0;font-size:18px;}
+ul {margin:0;}
+li {list-style:none;}
+</style>
+</head>
+
+<body background="/static/03.jpeg" >
+
+
+<embed height=0 width=0 src="/static/02.mp3" loop="true"></embed>
+<div id="position1">
+<a href="http://www.bilibili.com/video/av2462267/">
+<img src="/static/05.jpg" height="200px;" width="300px";>
+</a>
+</div>
+<div id="position2">
+<a href="http://tieba.baidu.com/f?kw=%D6%D5%BD%E1%B5%C4%B3%E3%CC%EC%CA%B9" >
+<img src="/static/04.jpg" height="400px;" width="300px";>
+</a>
+</div>
+<div id="position3">
+<img src="/static/02.jpeg" height="300px;" width="300px";>
+</div>
+<div id="container">
+
+<div id="header">
+<div id="transbox1">
+<div id="back1">
+<h1><span class="highlight1">学生名单查询系统</span></h1>
+</div>
+</div>
+</div>
+<div id="menu">
+<h2><span class="highlight">菜单</span></h2>
+<ul>
+<li><a href="/"><h2><span class="highlight">返回主页</span></h2></a></li>
+<li><a href="/coulist"><h2><span class="highlight">学生</span></h2></a></li>
+
+</ul>
+
+</div>
+
+<div id="content">
+
+学生列表
+
+<td>
+        {% block content %}
+        {% end %}          
+        </td>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+
